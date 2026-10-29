@@ -3,42 +3,45 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Ana Clara</title>
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 
 <body>
-    <header>
-        <nav aria-label="Navegação Principal">
-            <a href="sobre.html">Sobre Mim e Projetos</a> |
-            <a href="#contato">Ir para contato</a> |
+    <header class="header-principal">
+        <nav aria-label="Navegação Principal" class="nav-principal">
+            <a href="sobre.html" class="nav-link">Sobre Mim e Projetos</a>
+            <span class="nav-divider">|</span>
+            <a href="#contato" class="nav-link">Ir para contato</a>
         </nav>
 
         <!-- cabeçalho principal -->
-        <h1>Portfólio de Ana Clara</h1>
+        <h1 class="titulo-principal">Portfólio de Ana Clara</h1>
     </header>
 
-    <main>
+    <main class="conteudo-principal">
         <!-- subtitulo de boas-vindas -->
-        <section aria-labelledby="boas-vindas-titulo">
-            <h2 id="boas-vindas-titulo">Seja bem-vindo(a)!</h2>
-            <p>
+        <section aria-labelledby="boas-vindas-titulo" class="secao-card">
+            <h2 id="boas-vindas-titulo" class="secao-titulo">Seja bem-vindo(a)!</h2>
+            <p class="texto-descricao">
                 Olá! Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> pela <strong>FATEC</strong>
                 e
-                técina pelo <strong>SENAI</strong> e este é o meu portfólio. Aqui você encontrará um pouco sobre minhas
+                técnica pelo <strong>SENAI</strong> e este é o meu portfólio. Aqui você encontrará um pouco sobre minhas
                 experiências, habilidades e projetos de desenvolvimento web e mobile.
             </p>
         </section>
 
         <!-- foto de perfil -->
-        <section aria-labelledby="apresentacao-titulo">
-            <h2 id="apresentacao-titulo">Apresentação</h2>
-            <img src="imagens/perfil.jpeg" alt="Foto de perfil de Ana Clara Vicentini" width="200">
+        <section aria-labelledby="apresentacao-titulo" class="secao-card secao-perfil">
+            <h2 id="apresentacao-titulo" class="secao-titulo">Apresentação</h2>
+            <img src="imagens/perfil.jpeg" alt="Foto de perfil de Ana Clara Vicentini" class="foto-perfil">
         </section>
 
         <!-- tecnologias -->
-        <section aria-labelledby="tecnologias-titulo">
-            <h2 id="tecnologias-titulo">Tecnologias</h2>
-            <ul>
+        <section aria-labelledby="tecnologias-titulo" class="secao-card">
+            <h2 id="tecnologias-titulo" class="secao-titulo">Tecnologias</h2>
+            <ul class="lista-techs">
                 <li>HTML e CSS</li>
                 <li>JavaScript e TypeScript</li>
                 <li>Python</li>
@@ -49,9 +52,9 @@
         </section>
 
         <!-- atuação -->
-        <section aria-labelledby="atuacao-titulo">
-            <h2 id="atuacao-titulo">Áreas de Atuação</h2>
-            <ol>
+        <section aria-labelledby="atuacao-titulo" class="secao-card">
+            <h2 id="atuacao-titulo" class="secao-titulo">Áreas de Atuação</h2>
+            <ol class="lista-atuacao">
                 <li><strong>Front-End Web:</strong> interfaces responsivas e interativas com HTML, CSS e JavaScript</li>
                 <li><strong>React / React Native:</strong> desenvolvimento de aplicações web e mobile modernas</li>
                 <li><strong>UI/UX:</strong> criação de layouts, protótipos e foco na experiência do usuário</li>
@@ -64,16 +67,19 @@
     </main>
 
     <!-- contato -->
-    <footer>
-        <section aria-labelledby="contato">
-            <h2 id="contato">Informações de Contato</h2>
-            <p>
+    <footer class="rodape-principal">
+        <section aria-labelledby="contato" id="contato" class="secao-contato">
+            <h2 class="secao-titulo">Informações de Contato</h2>
+            <p class="texto-contato">
                 Sinta-se à vontade para entrar em contato ou conhecer minhas redes:<br>
-                <strong>E-mail:</strong> ana.costa13@aluno.cps.gov.br<br>
-                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anacvicentini/" target="_blank">Meu
+                <strong>E-mail:</strong> <a href="mailto:ana.costa13@aluno.cps.gov.br"
+                    class="link-contato">ana.costa13@aluno.cps.gov.br</a><br>
+                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anacvicentini/" target="_blank"
+                    class="link-contato">Meu
                     Perfil no
                     LinkedIn</a><br>
-                <strong>GitHub:</strong> <a href="https://github.com/anads07" target="_blank">Meu Perfil no GitHub</a>
+                <strong>GitHub:</strong> <a href="https://github.com/anads07" target="_blank" class="link-contato">Meu
+                    Perfil no GitHub</a>
             </p>
         </section>
     </footer>

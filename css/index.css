@@ -1,0 +1,192 @@
+/* Reset básico e configurações gerais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-fundo: #0d1b2a;
+  --cor-card: #1b263b;
+  --cor-borda: #415a77;
+  --cor-texto: #e0e1dd;
+  --cor-destaque: #77abb7;
+  --cor-destaque-hover: #a3cef1;
+  --cor-sombra: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Acessibilidade para foco via teclado */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--cor-destaque-hover);
+  outline-offset: 3px;
+}
+
+/* Cabeçalho e navegação principal */
+.header-principal {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.nav-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--cor-card);
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: var(--cor-destaque);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--cor-destaque-hover);
+  text-decoration: underline;
+}
+
+.nav-divider {
+  color: var(--cor-borda);
+}
+
+.titulo-principal {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-top: 10px;
+  text-shadow: 1px 1px 4px var(--cor-sombra);
+}
+
+/* Conteúdo principal e seções */
+.conteudo-principal {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.secao-card {
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 6px var(--cor-sombra);
+}
+
+.secao-titulo {
+  color: var(--cor-destaque);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--cor-borda);
+  padding-bottom: 5px;
+}
+
+.texto-descricao {
+  font-size: 1.05rem;
+}
+
+/* Foto de perfil */
+.secao-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto-perfil {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--cor-destaque);
+  margin-top: 10px;
+  box-shadow: 0 4px 8px var(--cor-sombra);
+}
+
+/* Lista de tecnologias com hover */
+.lista-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.lista-techs li {
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  color: var(--cor-destaque-hover);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease,
+    border-color 0.3s ease;
+  cursor: default;
+}
+
+/* Efeito hover nas tecnologias */
+.lista-techs li:hover {
+  background-color: var(--cor-borda);
+  border-color: var(--cor-destaque-hover);
+  transform: translateY(-2px);
+}
+
+.lista-atuacao {
+  padding-left: 20px;
+}
+
+.lista-atuacao li {
+  margin-bottom: 10px;
+}
+
+/* Rodapé e contato */
+.rodape-principal {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 30px;
+}
+
+.secao-contato {
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+}
+
+.texto-contato {
+  line-height: 1.8;
+}
+
+.link-contato {
+  color: var(--cor-destaque);
+  text-decoration: none;
+}
+
+.link-contato:hover {
+  color: var(--cor-destaque-hover);
+  text-decoration: underline;
+}
