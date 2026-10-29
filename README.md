@@ -1,23 +1,27 @@
-# Web Portfolio
+# Web Portfolio — Ana Clara Vicentini
 
-Portfólio pessoal em desenvolvimento durante a disciplina de **Desenvolvimento Web**, com o objetivo de praticar e aprimorar conhecimentos em desenvolvimento front-end.
+Portfólio pessoal desenvolvido como parte da disciplina de **Desenvolvimento Web**, com o objetivo de praticar e aprimorar conhecimentos em desenvolvimento front-end, acessibilidade e design responsivo.
 
-## Tecnologias
+## 🛠️ Tecnologias Utilizadas
 
-- **HTML** — estruturação das páginas web.
+- **HTML5** — Estruturação semântica das páginas web.
+- **CSS3** — Estilização avançada, utilizando:
+  - Modelo de Caixa (*Box Model* e `box-sizing: border-box`).
+  - Organização com **Flexbox**.
+  - Variáveis CSS e paleta de cores personalizada (**Azul Petróleo**).
+  - Estados de interação (`:hover`) e acessibilidade de foco (`:focus-visible`).
 
-## Objetivos
+## 📁 Estrutura de Pastas
 
-- Aplicar os conceitos estudados em sala de aula.
-- Praticar a estruturação de páginas com HTML.
-- Aprimorar gradualmente as habilidades em desenvolvimento front-end.
-
-## Status do projeto
-
-Em desenvolvimento. Atualmente, o projeto está na etapa de construção da estrutura HTML, com a implementação de CSS e JavaScript prevista para as próximas etapas.
-
-## Autora
-
-**Ana Clara Vicentini**
-
-Projeto acadêmico desenvolvido como parte da disciplina de Desenvolvimento Web.
+```text
+meu-portfolio/
+│
+├── index.html          # Página inicial (Apresentação e Tecnologias)
+├── sobre.html          # Página sobre mim, formação e projetos em destaque
+│
+├── CSS/
+│   ├── index.css       # Estilos da página inicial
+│   └── sobre.css       # Estilos da página sobre e projetos
+│
+└── imagens/
+    └── perfil.jpeg     # Foto de perfil
